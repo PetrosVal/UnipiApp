@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.unipiapp.members">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/memberName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Member Name"
+
+                />
+
+            <EditText
+                android:id="@+id/memberPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone" />
+
+            <EditText
+                android:id="@+id/memberEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/addMemberButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="ADD MEMBER"
+                android:textColor="@color/lightgray" />
+
+
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchView1"
+                android:background="@color/yellow">
+
+
+            </SearchView>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioGroup1"
+                >
+                <RadioButton
+                    android:id="@+id/nameRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/emailRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"/>
+                <RadioButton
+                    android:id="@+id/phoneRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"/>
+
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/searchMemberButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/deeppurple"
+                android:text="SEARCH MEMBER"
+                android:textColor="@color/lightgray" />
+
+            <EditText
+                android:id="@+id/memberEmail2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delete By Email" />
+
+            <Button
+                android:id="@+id/deleteMemberButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Delete MEMBER"
+                android:textColor="@color/lightgray" />
+
+            <EditText
+                android:id="@+id/memberEmail3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Give Email" />
+
+            <EditText
+                android:id="@+id/memberPhone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Edit Phone" />
+
+            <Button
+                android:id="@+id/UpdatePhoneButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Edit Phone"
+                android:textColor="@color/lightgray" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
